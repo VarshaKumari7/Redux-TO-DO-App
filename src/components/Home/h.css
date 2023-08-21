@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: violet; */
+}
+
+.main-div{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.child-div{
+    display: flex;
+    flex-direction: column;
+    margin: 6%;
+    width: 80%;
+}
+
+.top-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.top-section input, .bttn{
+    padding: 15px;
+}
+
+.top-section input{
+    flex: 5;
+}
+
+.bttn{
+    flex: 1;
+    cursor: pointer;
+}
+
+.bottom-section{
+    overflow-y: scroll ;
+    height: 500px;
+}
+
+.bottom-section::-webkit-scrollbar{
+    display: none;
+}
+
+.items-row{
+    display: flex;
+    align-items: center;
+    height: 85px;
+    background-color: antiquewhite;
+    margin-bottom: 1%;
+}
+
+.check-box input{
+    height: 32px;
+    width: 73%;
+}
+
+.todos {
+    font-size: 1.5rem;
+}
+
+.check-box, .todos,.deadline,.edit-icon,.delete-icon{
+    flex: 2;
+}
+
+.edit-icon{
+    text-align: end;
+}
+
+.delete-icon{
+    text-align: center;
+}
+.edit-icon img{
+    /* height: 54%; */
+    width: 42%;
+}
+
+.delete-icon img{
+    width: 27%;
+}
