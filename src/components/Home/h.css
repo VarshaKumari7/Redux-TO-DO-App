@@ -74,6 +74,7 @@
 
 .delete-icon{
     text-align: center;
+    cursor: pointer;
 }
 .edit-icon img{
     /* height: 54%; */

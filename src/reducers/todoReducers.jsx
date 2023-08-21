@@ -32,20 +32,20 @@ const todoReducers = (state = initialData, action) => {
         dataList: dataAfterdeletion,
       };
 
-    case "EDIT_TODO":
-      const editedDataList = state.dataList.map((ele) => {
-        if (ele.id === action.payload.id) {
-          return {
-            ...ele,
-            data: action.payload.newData,
-          };
-        }
-        return ele;
-      });
-      return {
-        ...state,
-        dataList: editedDataList,
-      };
+    // case "EDIT_TODO":
+    //   const editedDataList = state.dataList.map((ele) => {
+    //     if (ele.id === action.payload.id) {
+    //       return {
+    //         ...ele,
+    //         data: action.payload.newData,
+    //       };
+    //     }
+    //     return ele;
+    //   });
+    //   return {
+    //     ...state,
+    //     dataList: editedDataList,
+    //   };
     default:
       return state;
   }
